@@ -1,162 +1,435 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<style>
- body {
-      position: relative; 
-  }
-  .handWrite{
-  font-family: 'Shadows Into Light', cursive;
-  }
-  .navbar-brand{
-  font-size:24px;
- }
-  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
-  #section3 {padding-top:50px;height:500px;color: #fff; background-color:#58AE43;}
-#section1{
-    background-image:url('https://pbs.twimg.com/profile_banners/539964056/1452454705/1500x500');'
-   background-repeat:no-repeat;
-    background-size:contain;
-    background-size: cover;
-    height:500px;
-    width:100%;
-    background-position:center;
-   
-}
-.iconset li{
-display:inline;
-float: left;
-padding:5px;
-}
-.iconset li img{
-max-height:40px;
-max-width:40px;
-}
-.myIframe {
-position: relative;
-padding-bottom: 65.25%;
-padding-top: 30px;
-height: 0;
-overflow: auto; 
--webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
-border: solid black 1px;
-} 
-.myIframe iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-.headIcons li{
-padding:5px;
-color:white;
-display:inline;
-font-size:24px;s
-}
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
 
-</style>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">suresh karri</a>
-      <ul class="headIcons hidden-xs" style="display:inline;">
-      <li><a target="_blank" href="https://github.com/cnssuresh"><i  class="fa fa-github" aria-hidden="true"></i></a> </li>
-    	<li><a target="_blank" href="https://www.facebook.com/cns.suresh14"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-    	<li><a target="_blank" href="https://twitter.com/cnssuresh"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-    	 <li><a target="_blank" href="https://www.linkedin.com/in/cnssuresh"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse pull-right" id="myNavbar">
-        <ul class="nav navbar-nav">
-        
-          <li><a href="#section1">WELCOME</a></li>
-          <li><a href="#section2">PORTFOLIO</a></li>
-          <li><a href="#section3">CONTACT ME</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>    
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="assets/css/plugins.css" />
+        <link rel="stylesheet" href="assets/css/roboto-railway-webfont.css" />
+        <link rel="stylesheet" href="assets/css/linearicons-web-font.css" />
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
-<div id="section1" class="container-fluid">
-<div class="text-center"><h1 style="font-size:70px;">HELLO</h1></div>
-<div class="text-center handWrite"><h2 style="font-size:40px;">I am suresh</h1></div>
-<div class="col-xs-12 col-sm-7 handWrite">
-<div class="col-xs-12">
-<h1> <CODER> </h1>
-<h3>Developer who focuses on writing clean,elegent and efficient code.</h4>
-<div class="col-xs12">
-<p class="center-block" style="font-size:24px;">In <i class="glyphicon glyphicon-heart" style="color:white;"></i> with</p>
-<ul class="iconset">
-	<li> <img src="https://i.imgsafe.org/9407924984.png" alt="HTML5" class="img-responsive" title="HTML5" /> </li>
-	<li><img src="https://i.imgsafe.org/940734cbd1.png" alt="CSS3" class="img-responsive" title="css3"  /> </li>
-	<li><img src="https://i.imgsafe.org/9407209379.png" alt="Bootstrap" class="img-responsive" title="Bootstrap"  /> </li>
-	<li><img src="https://i.imgsafe.org/9407a555cc.png" alt="jquery" class="img-responsive" title="Jquery"  /> </li>
-	<li><img src="https://i.imgsafe.org/9406ff1e0e.png" alt="Angular js" class="img-responsive" title="Angular JS"  /> </li>
-	<li><img src="https://i.imgsafe.org/94074d1b21.png" alt="Dot net Technologies" class="img-responsive" title="Dotnet Server side Technologies"  /> </li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div id="section2" class="container-fluid">
-  <h1 class="text-center">PORTFOLIO</h1>
-   <div class="row">
-    <div class="col-sm-3 col-xs-12 handWrite">
-    <h4>Current Project </h4>
-      <a href="http://www.bestdotnettraining.com/" class="thumbnail">
-        <img src="https://i.imgsafe.org/9547e351ab.png" alt="Pulpit Rock" style="width:150px;height:150px">
-      </a>
-    </div>
-    <div class="col-sm-3 col-xs-12 handWrite">
-    <h4>Works in</h4>
-      <a href="http://www.deccansoft.com/" class="thumbnail">
-        <img src="https://i.imgsafe.org/95478dcf1b.png" alt="Moustiers Sainte Marie" style="width:150px;height:150px">
-      </a>
-    </div>
-    <div class="col-sm-3 col-xs-12 handWrite">
-            <h4>Graduated from</h4>
-      <a target="_blank" href="http://www.enggjrg.nova.edu.in/" class="thumbnail">
-        <img src="https://i.imgsafe.org/9547bb746d.png" alt="Cinque Terre" style="width:150px;height:150px">
-      </a>
-    </div>
-        <div class="col-sm-3 col-xs-12 handWrite">
-        <h4>Schooling In</h4>
-      <a href="#" class="thumbnail"> 
-        <img src="https://i.imgsafe.org/958182db4a.png" alt="Cinque Terre" style="width:150px;height:150px">
-      </a>
-    </div>
-  </div>
-</div>
-<div id="section3" class="container-fluid handWrite">
-  <h1>Contact me</h1>
-  <div class="col-xs-12 myIframe">
- <iframe height="300" width="600"  src="https://docs.google.com/forms/d/e/1FAIpQLSceDfpsJDbbau1yGdbhHHHMgAOEMbuevph3xB6GFHOd7kz74g/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-</div>
-</div>
-<div class="container">
- <div class="text-center">
- <ul class="headIcons" style="display:inline;">
-      <li><a target="_blank" href="https://github.com/cnssuresh"><i  class="fa fa-github" aria-hidden="true"></i></a> </li>
-    	<li><a target="_blank" href="https://www.facebook.com/cns.suresh14"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-    	<li><a target="_blank" href="https://twitter.com/cnssuresh"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-    	 <li><a target="_blank" href="https://www.linkedin.com/in/cnssuresh"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-      </ul>
-      <p>&copy;No Copy rights,any one can copy this design.<i class="fa fa-smile-o" aria-hidden="true"></i>
-      </p>
-      </div>
-</div>
-</body>
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#home"><span>Home</span></a></li>
+                <li><a href="#about"><span>About Me</span></a></li>
+                <li><a href="#features"><span>Features</span></a></li>
+                <li><a href="#experience"><span>Experience</span></a></li>
+                <li><a href="#portfolio"><span>Portfolio</span></a></li>
+                
+            </ul>
+            <a href="#0" class="cd-close-menu">Close<span></span></a>
+        </nav>
+
+        <!--Home page style-->
+        <header id="home" class="home home-main-content">
+            <div class="overlay sections">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="div-menu">
+                            <header class="cd-header">
+                                <div id="cd-logo">
+                                    <a href="index.html"><img src="assets/images/logo.gif" alt="Logo"></a>
+                                </div>
+                                <a class="cd-menu-trigger" href="#main-nav"><span></span></a>
+                            </header>
+                        </div>
+
+
+                        <div class="home-wrapper">
+                            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                                <div class="home-content">
+                                    <h1>Suresh Karri</h1>
+                                    <p>#User Experience &nbsp; #Code &nbsp; #Design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sections -->
+        <section id="about" class="sections3">
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="about-wrapper">
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="about-photo">
+                                <img src="assets/images/man.png" alt="About Photo" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="about-content text-left">
+                                <h4>Hi, i’m Suresh Karri, Full Stack Developer from Hyderabad,India.</h4>
+                                <ol>
+                                  <li>
+                                      Developed a goal prioritization modules for performance goals in BestDotNetTraining with Agile methodology.
+                                  </li>
+                                  <li> Resolved critical bugs in the product to improve performance and help customer's to Go Live.</li>
+                                  <li>Discussed, analyzed and strategized product design with Product Managers and UX team.</li>
+                                  <li>
+                                      Interviewed prospective employees and mentored junior software developers on the team.
+                                  </li>
+                                </ol>
+                                <a href="mailto:suresh42326@gmail.com" class="btn btn-default">Hire Me !</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>	
+            </div> <!-- /container -->       
+        </section>
+
+        <!-- Sections -->
+        <section id="features" class="sections lightbg">
+
+            <div class="heading-content text-center">
+                <h3>My Working Process</h1>
+                    <p>Hi, i’m Paul Lapkin, Experience Crafter from Canada.</p>
+            </div>
+
+            <div class="container text-center">
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="features-wrapper">
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-bg design">
+
+                                <div class="features-item">
+                                    <i class="lnr lnr-screen"></i>
+                                    <h6><a href="#">Design</a></h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-bg development">
+
+                                <div class="features-item">
+                                    <i class="lnr lnr-magic-wand"></i>
+                                    <h6><a href="#">development</a></h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-bg testing">
+
+                                <div class="features-item">
+                                    <i class="lnr lnr-dinner"></i>
+                                    <h6><a href="#">Testing</a></h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="features-bg launch">
+
+                                <div class="features-item">
+                                    <i class="lnr lnr-rocket"></i>
+                                    <h6><a href="#">Launch</a></h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> <!-- /container -->       
+        </section>
+
+        <!-- Sections -->
+        <section id="experience" class="experience">
+            <div class="overlay sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="experience-wrapper">
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="experience-content">
+
+                                    <h4>Work Experience</h4>
+
+                                    <div class="content-details content-border">
+                                        <h5>Mad Max Design</h5>
+                                        <h6>OCT 2013 - june 2014</h6>
+                                        <p>orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    </div>
+
+                                    <div class="content-details">
+                                        <h5>Crazy Design</h5>
+                                        <h6>OCT 2013 - june 2015</h6>
+                                        <p>orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="experience-content">
+
+                                    <h4>Education</h4>
+
+                                    <div class="content-details content-border">
+                                        <h5>Maddison University</h5>
+                                        <h6>OCT 2013 - june 2014</h6>
+                                        <p>orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    </div>
+
+                                    <div class="content-details">
+                                        <h5>Max Design & Art Institute</h5>
+                                        <h6>OCT 2013 - june 2015</h6>
+                                        <p>orem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>	
+                    </div>
+                </div>
+            </div>       
+        </section>
+
+        <!-- Sections -->
+        <section id="portfolio" class="sections">
+            <div class="container">
+
+                <div class="heading-content text-center">
+                    <h3>My Latest Works</h3>
+                    <p>Hi, i’m Paul Lapkin, Experience Crafter from Canada.</p>
+                </div>
+
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="portfolio-wrapper">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="portfolio-item">
+                                <a href="assets/images/portfolio/pf1.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf1.jpg" alt="" /></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="portfolio-item">
+                                <a href="assets/images/portfolio/pf2.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf2.jpg" alt="" /></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="portfolio-item">
+                                <a href="assets/images/portfolio/pf3.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf3.jpg" alt="" /></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="portfolio-item">
+                                <a href="assets/images/portfolio/pf4.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf4.jpg" alt="" /></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="portfolio-wrapper2">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="portfolio-item width-img">
+                                <a href="assets/images/portfolio/pf1.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf1.jpg" alt="" /></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="portfolio-item">
+                                <a href="assets/images/portfolio/pf2.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf2.jpg" alt="" /></a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="portfolio-item">
+                                <a href="assets/images/portfolio/pf3.jpg" class="portfolio-img"><img src="assets/images/portfolio/pf3.jpg" alt="" /></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div> <!-- /container -->       
+        </section>
+
+        <!-- Sections -->
+        <section id="testimonial" class="lightbg">
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row">
+                    <div class="testimonial-wrapper sections4">
+
+                        <div class="col-md-5 col-sm-6 col-xs-12">
+                            <div class="testimonial-content text-left">
+
+                                <div class="testimonial-quote">
+                                    <i class="fa fa-quote-left"></i>
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat.</p>
+                                </div>
+
+                                <div class="singnature">
+                                    <img src="assets/images/signature.png" alt="Signature" />
+                                </div>
+
+                                <div class="regards-by">
+                                    <h5>Deniel Croft</h5>
+                                    <p>Creative Designer, Levy</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <div class="profile-photo">
+                                <img src="assets/images/man2.png" alt="testimonial" />
+                            </div>
+                        </div>
+
+                    </div> 
+                </div>
+            </div> <!-- /container -->       
+        </section>
+
+        <!-- Sections -->
+        <section id="contact" class="contact">
+            <div class="overlay sections">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-wrapper">
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="contact-area">
+
+                                    <h4>Leave a message</h4>
+                                    <form>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Name*">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email*">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Subject*">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <textarea rows="9" class="form-control" placeholder="Message"></textarea>
+                                        </div>
+
+
+                                        <a type="submit" class="btn btn-default">Hire Me !</a>
+
+                                    </form>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="contact-details-area">
+
+                                    <div class="contact-details">
+                                        <h4>Address</h4>
+                                        <p>Gulshan Sales Office. SA Tower (Level-5), Plot#1, Road#134, Block SE(A), Gulshan-1, Dhaka 1212.</p>
+                                    </div>
+
+                                    <div class="contact-details">
+                                        <h4>Phone</h4>
+                                        <p>+880 1912 109670</p>
+                                        <p>+880 1670 863946</p>
+                                    </div>
+
+                                    <div class="contact-details">
+                                        <h4>Web</h4>
+                                        <p>Mail: quicksayed@gmail.com</p>
+                                        <p>Website: dribbble.com/alisayed</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>	
+                    </div>
+                </div>
+            </div>       
+        </section>
+
+
+        <!--Footer-->
+        <footer id="footer" class="footer">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                        <div class="main-footer">
+
+                            <div class="social">
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-behance"></i></a>
+                                <a href="#"><i class="fa dribbble fa-dribbble"></i></a>
+                            </div>
+
+                            <p>Made with <i class="fa fa-heart"></i> by <a target="_blank" href="http://bootstrapthemes.co"> Bootstrap Themes </a>2016. All rights reserved.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <script src="assets/js/modernizr.js"></script>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
