@@ -463,7 +463,7 @@ textarea::-ms-input-placeholder
 
 /*For Home Section*/
 .home{
-    background: url(../images/bgImage.jpg) no-repeat center top fixed;
+    background: url(../images/coding.jpg) no-repeat center top fixed;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
