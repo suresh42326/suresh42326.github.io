@@ -1,409 +1,174 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="google-site-verification" content="2zJHLkh8V_iXSs9_I-qR95ccAiJx5llT_LBAg86wTyw" />
-    <title>#suresh42326 - Let's do real coding</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suresh Karri - AI & Cloud Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>
+        function changeSection(section, event) {
+            // Hide all sections
+            ['about', 'projects', 'certifications'].forEach(sec => {
+                document.getElementById(sec).classList.add('hidden');
+            });
+            
+            // Show selected section
+            document.getElementById(section).classList.remove('hidden');
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!--        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">-->
+            // Update active nav button
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+                btn.classList.add('text-gray-600', 'hover:text-blue-500');
+            });
 
+            if (event) {
+                event.target.classList.remove('text-gray-600', 'hover:text-blue-500');
+                event.target.classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
+            }
+        }
 
-    <!--For Plugins external css-->
-    <link rel="stylesheet" href="assets/css/plugins.css" />
-    <link rel="stylesheet" href="assets/css/roboto-railway-webfont.css" />
-    <link rel="stylesheet" href="assets/css/linearicons-web-font.css" />
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
 
-    <!--Theme custom css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!--Theme Responsive css-->
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-
-    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    <link rel="manifest" href="https://suresh42326.github.io//manifest.json">
+        // Initialize the page with About section visible
+        window.onload = function() {
+            changeSection('about');
+        }
+    </script>
 </head>
-
-<body>
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-    <div class='preloader'>
-        <div class='loaded'>&nbsp;</div>
-    </div>
-
-
-    <nav id="main-nav">
-        <ul>
-            <li>
-                <a href="#home">
-                    <span>Home</span>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Suresh Karri</h1>
+                <p class="text-xl md:text-2xl">AI & Cloud Computing Professional</p>
+            </div>
+            <div class="hidden md:flex space-x-4 items-center">
+                <a href="mailto:suresh42326@gmail.com" class="hover:text-blue-200">
+                    suresh42326@gmail.com
                 </a>
-            </li>
-            <li>
-                <a href="#about">
-                    <span>About Me</span>
+                <a href="https://www.linkedin.com/in/suresh42326/" target="_blank" rel="noopener noreferrer" class="hover:text-blue-200">
+                    LinkedIn Profile
                 </a>
-            </li>
-            <li>
-                <a href="#features">
-                    <span>Features</span>
-                </a>
-            </li>
-            <li>
-                <a href="#experience">
-                    <span>Experience</span>
-                </a>
-            </li>
-            <li>
-                <a href="#portfolio">
-                    <span>Portfolio</span>
-                </a>
-            </li>
-
-        </ul>
-        <a href="#0" class="cd-close-menu">Close
-            <span></span>
-        </a>
-    </nav>
-
-    <!--Home page style-->
-    <header id="home" class="home home-main-content">
-        <div class="overlay sections">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="div-menu">
-                        <header class="cd-header">
-                            <div id="cd-logo">
-                                <a href="index.html">
-                                    <img src="assets/images/logo.gif" alt="Logo">
-                                </a>
-                            </div>
-                            <a class="cd-menu-trigger" href="#main-nav">
-                                <span></span>
-                            </a>
-                        </header>
-                    </div>
-
-
-                    <div class="home-wrapper">
-                        <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-                            <div class="home-content">
-                                <h1>Suresh Karri</h1>
-                                <p>#User Experience &nbsp; #Code &nbsp; #Design</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
 
-    <!-- Sections -->
-    <section id="about" class="sections3">
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="about-wrapper">
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="about-photo">
-                            <img src="assets/images/aboutme.jpg" style="margin-bottom: 40px;" alt="About Photo" />
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="about-content text-left">
-                            <h4>Hi, i’m Suresh Karri, Full Stack Developer from Hyderabad,India.</h4>
-                            <ol>
-                                <li>
-                                    Developed a goal prioritization modules for performance goals in BestDotNetTraining with Agile methodology.
-                                </li>
-                                <li> Resolved critical bugs in the product to improve performance and help customer's to Go Live.</li>
-                                <li>Discussed, analyzed and strategized product design with Product Managers and UX team.</li>
-                                <li>
-                                    Interviewed prospective employees and mentored junior software developers on the team.
-                                </li>
-                            </ol>
-                            <a href="mailto:suresh42326@gmail.com" class="btn btn-default">Hire Me !</a>
-                        </div>
-                    </div>
-
-                </div>
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="hidden md:flex space-x-6 py-4">
+                <button onclick="changeSection('about', event)" class="nav-btn text-blue-600 font-bold border-b-2 border-blue-600">
+                    About
+                </button>
+                <button onclick="changeSection('projects', event)" class="nav-btn text-gray-600 hover:text-blue-500">
+                    Projects
+                </button>
+                <button onclick="changeSection('certifications', event)" class="nav-btn text-gray-600 hover:text-blue-500">
+                    Certifications
+                </button>
+            </div>
+            <div class="md:hidden flex items-center w-full justify-between py-4">
+                <span class="text-xl font-bold">Menu</span>
+                <button onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="md:hidden absolute top-full left-0 w-full bg-white shadow-lg hidden">
+                <button onclick="changeSection('about'); toggleMobileMenu();" class="block w-full text-left px-4 py-3 hover:bg-gray-100">
+                    About
+                </button>
+                <button onclick="changeSection('projects'); toggleMobileMenu();" class="block w-full text-left px-4 py-3 hover:bg-gray-100">
+                    Projects
+                </button>
+                <button onclick="changeSection('certifications'); toggleMobileMenu();" class="block w-full text-left px-4 py-3 hover:bg-gray-100">
+                    Certifications
+                </button>
             </div>
         </div>
-        <!-- /container -->
-    </section>
+    </nav>
 
-    <!-- Sections -->
-    <section id="features" class="sections lightbg">
-
-        <div class="heading-content text-center">
-            <h3>My Working Process</h1>
-                <p>Hi, i’m Suresh Karri, Experience Crafter from India.</p>
-        </div>
-
-        <div class="container text-center">
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="features-wrapper">
-
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="features-bg design">
-
-                            <div class="features-item">
-                                <i class="lnr lnr-screen"></i>
-                                <h6>
-                                    <a href="#">Design</a>
-                                </h6>
-                            </div>
-
-                        </div>
+    <main class="container mx-auto px-4 py-12">
+        <section id="about" class="hidden">
+            <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-4 text-gray-800">About Me</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    I am a passionate AI and Cloud Computing professional with over 10 years of experience 
+                    in developing innovative technological solutions. My expertise lies in creating scalable, 
+                    intelligent systems that drive business value and technological advancement.
+                </p>
+                <div class="mt-6 grid md:grid-cols-2 gap-4">
+                    <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow-md">
+                        <i class="fas fa-cloud text-blue-500 text-4xl"></i>
+                        <span class="font-semibold text-gray-700">Cloud Technologies</span>
                     </div>
-
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="features-bg development">
-
-                            <div class="features-item">
-                                <i class="lnr lnr-magic-wand"></i>
-                                <h6>
-                                    <a href="#">development</a>
-                                </h6>
-                            </div>
-
-                        </div>
+                    <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow-md">
+                        <i class="fas fa-brain text-purple-500 text-4xl"></i>
+                        <span class="font-semibold text-gray-700">AI & Machine Learning</span>
                     </div>
-
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="features-bg testing">
-
-                            <div class="features-item">
-                                <i class="lnr lnr-dinner"></i>
-                                <h6>
-                                    <a href="#">Testing</a>
-                                </h6>
-                            </div>
-
-                        </div>
+                    <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow-md">
+                        <i class="fas fa-code text-green-500 text-4xl"></i>
+                        <span class="font-semibold text-gray-700">Full Stack Development</span>
                     </div>
-
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="features-bg launch">
-
-                            <div class="features-item">
-                                <i class="lnr lnr-rocket"></i>
-                                <h6>
-                                    <a href="#">Launch</a>
-                                </h6>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- /container -->
-    </section>
-
-    <!-- Sections -->
-    <section id="experience" class="experience">
-        <div class="overlay sections">
-            <div class="container">
-                <div class="row">
-                    <div class="experience-wrapper">
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="experience-content">
-
-                                <h4>Work Experience</h4>
-
-                                <div class="content-details content-border">
-                                    <h5>Deccansoft Software Services</h5>
-                                    <h6>June 2016 - Till Now</h6>
-                                    <p>
-                                        Working as a full stack developer for exciting projects in the field of medicine and eLearning.
-                                    </p>
-                                </div>
-
-
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="experience-content">
-
-                                <h4>Education</h4>
-
-                                <div class="content-details content-border">
-                                    <h5>Nova College of Engg and Tech, JNTUK</h5>
-                                    <h6>June 2011 - june 2015</h6>
-                                    <p>
-                                        B.Tech(Electronics and Communication Engg).
-                                    </p>
-                                </div>
-
-
-
-                            </div>
-                        </div>
-
+                    <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow-md">
+                        <i class="fas fa-server text-indigo-500 text-4xl"></i>
+                        <span class="font-semibold text-gray-700">DevOps</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sections -->
-    <section id="portfolio" class="sections">
-        <div class="container">
-
-            <div class="heading-content text-center">
-                <h3>My Latest Works</h3>
-                <p>Here is the latest work of mine.</p>
-            </div>
-
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="portfolio-wrapper">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="portfolio-item">
-                            <a href="http://usgips.pathpresenter.net/" class="portfolio-img">
-                                <img src="assets/images/portfolio/p1.png" alt="" />
-                            </a>
-                        </div>
+        <section id="projects" class="hidden">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold mb-4 text-gray-800">Featured Projects</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
+                        <h3 class="text-xl font-bold mb-2">Cyndelos</h3>
+                        <p class="text-gray-600">
+                            AI-powered online tracker monitoring and vulnerability management platform 
+                            leveraging advanced AI algorithms for comprehensive security solutions.
+                        </p>
                     </div>
-
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="portfolio-item">
-                            <a href="http://www.mocondemandcourses.com/" class="portfolio-img">
-                                <img src="assets/images/portfolio/p2.png" alt="" />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="portfolio-item">
-                            <a href="https://www.pathpresenter.net/" class="portfolio-img">
-                                <img src="assets/images/portfolio/p3.png" alt="" />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="portfolio-item">
-                            <a href="http://usgips.pathpresenter.net/" class="portfolio-img">
-                                <img src="assets/images/portfolio/p4.png" alt="" />
-                            </a>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-
-
-
-        </div>
-        <!-- /container -->
-    </section>
-
-
-    <!-- Sections -->
-    <section id="contact" class="contact">
-        <div class="overlay sections">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-wrapper">
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="contact-area">
-
-                                <h4>Leave a message</h4>
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWSDsy2Z5pwJujvTE0h1jAcJddQfuRecb-QAEzT8YvfdMqlw/viewform?embedded=true"
-                                    width="500" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="contact-details-area">
-
-                                <div class="contact-details">
-                                    <h4>Address</h4>
-                                    <p>
-                                        Near Shyamlal building, Begumpet, Hyderabad
-                                    </p>
-                                </div>
-
-                                <div class="contact-details">
-                                    <h4>Phone</h4>
-                                    <p>+91 7660942326</p>
-                                </div>
-
-                                <div class="contact-details">
-                                    <h4>Web</h4>
-                                    <p>Mail: suresh42326@gmail.com</p>
-                                </div>
-
-                            </div>
-                        </div>
-
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-purple-500">
+                        <h3 class="text-xl font-bold mb-2">WHO Bluebooks</h3>
+                        <p class="text-gray-600">
+                            Dynamic web platform for WHO Tumor Classification with advanced 
+                            whole slide imaging and annotation capabilities.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <!--Footer-->
-    <footer id="footer" class="footer">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-                    <div class="main-footer">
-
-                        <div class="social">
-                            <a href="https://twitter.com/suresh42326">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a href="https://in.linkedin.com/in/suresh42326">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                           
-                        </div>
-
-                        <p>2018. All rights reserved.</p>
-
+        <section id="certifications" class="hidden">
+            <div class="bg-gradient-to-tr from-indigo-50 to-blue-50 p-8 rounded-xl">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800 flex items-center">
+                    <i class="fas fa-award mr-4 text-yellow-500"></i> Professional Certifications
+                </h2>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                        <i class="fas fa-certificate mr-4 text-green-500"></i>
+                        <span class="font-semibold text-gray-700">Microsoft Azure AI Engineer</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                        <i class="fas fa-certificate mr-4 text-green-500"></i>
+                        <span class="font-semibold text-gray-700">Microsoft Certified Trainer</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-center">
+                        <i class="fas fa-certificate mr-4 text-green-500"></i>
+                        <span class="font-semibold text-gray-700">Azure Cloud Professional</span>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+    </main>
 
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Suresh Karri. All Rights Reserved.</p>
+        </div>
     </footer>
-
-
-    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/jquery.magnific-popup.js"></script>
-
-
-    <script src="assets/js/main.js"></script>
 </body>
-
 </html>
